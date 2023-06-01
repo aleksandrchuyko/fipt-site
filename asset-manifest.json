@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/fipt-site/static/css/main.1084c75b.css",
-    "main.js": "/fipt-site/static/js/main.30100562.js",
+    "main.js": "/fipt-site/static/js/main.f5df59aa.js",
     "static/js/31.09df4f4a.chunk.js": "/fipt-site/static/js/31.09df4f4a.chunk.js",
     "static/js/205.c010b37f.chunk.js": "/fipt-site/static/js/205.c010b37f.chunk.js",
-    "static/js/595.1c164e6b.chunk.js": "/fipt-site/static/js/595.1c164e6b.chunk.js",
+    "static/js/595.2f51bce7.chunk.js": "/fipt-site/static/js/595.2f51bce7.chunk.js",
     "static/js/855.500f1a56.chunk.js": "/fipt-site/static/js/855.500f1a56.chunk.js",
     "index.html": "/fipt-site/index.html",
     "main.1084c75b.css.map": "/fipt-site/static/css/main.1084c75b.css.map",
-    "main.30100562.js.map": "/fipt-site/static/js/main.30100562.js.map",
+    "main.f5df59aa.js.map": "/fipt-site/static/js/main.f5df59aa.js.map",
     "31.09df4f4a.chunk.js.map": "/fipt-site/static/js/31.09df4f4a.chunk.js.map",
     "205.c010b37f.chunk.js.map": "/fipt-site/static/js/205.c010b37f.chunk.js.map",
-    "595.1c164e6b.chunk.js.map": "/fipt-site/static/js/595.1c164e6b.chunk.js.map",
+    "595.2f51bce7.chunk.js.map": "/fipt-site/static/js/595.2f51bce7.chunk.js.map",
     "855.500f1a56.chunk.js.map": "/fipt-site/static/js/855.500f1a56.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1084c75b.css",
-    "static/js/main.30100562.js"
+    "static/js/main.f5df59aa.js"
   ]
 }
