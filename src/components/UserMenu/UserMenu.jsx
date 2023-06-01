@@ -19,7 +19,7 @@ const UserMenu = () => {
         {user}
       </span>
       <Button type="button" style={{ display: 'block' }} onClick={handleLogout}>
-        Log Out
+        Вихід
       </Button>
     </Box>
   );

@@ -20,7 +20,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 
   <Provider store={store}>
     <PersistGate loading={null} persistor={persistor}>
-      <BrowserRouter basename="/btc-test-frontend/">
+      <BrowserRouter basename="/fipt-site/">
         {/* <ThemeProvider theme={theme}> */}
         <App />
         {/* </ThemeProvider> */}

@@ -47,20 +47,20 @@ export const UserForm = ({ users, onSubmit }) => {
     <Box>
       <Form onSubmit={handleSubmit}>
         <Form.Group className="mb-2" controlId="formBasicName">
-          <Form.Label>User name</Form.Label>
+          <Form.Label>ПІБ студента</Form.Label>
 
           <Form.Control
             type="text"
             name="name"
             value={name}
             onChange={handleChange}
-            pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
+            pattern="^[a-zA-Zа-яА-Яа-їґЄ-ЯҐ]+(([' -][a-zA-Zа-яА-Яа-їґЄ-ЯҐ ])?[a-zA-Zа-яА-Яа-їґЄ-ЯҐ]*)*$"
             title="Name may contain only letters, apostrophe, dash and spaces."
             required
           />
         </Form.Group>
         <Form.Group className="mb-2" controlId="formBasicEmail">
-          <Form.Label>User email</Form.Label>
+          <Form.Label>Email студента</Form.Label>
           <Form.Control
             type="mail"
             name="email"
@@ -71,7 +71,7 @@ export const UserForm = ({ users, onSubmit }) => {
           />
         </Form.Group>
         <Form.Group className="mb-2" controlId="formBasicPassword">
-          <Form.Label>User password</Form.Label>
+          <Form.Label>Паспорт студента</Form.Label>
           <Form.Control
             type="text"
             name="password"
@@ -82,7 +82,7 @@ export const UserForm = ({ users, onSubmit }) => {
           />
         </Form.Group>
         <Button variant="primary" type="submit">
-          Add user
+          Додати в базу
         </Button>
       </Form>
     </Box>

@@ -59,7 +59,7 @@ export const LoginForm = ({ users, onSubmit }) => {
               />
             </Form.Group>
             <Button variant="primary" type="submit">
-              Log In
+              Увійти
             </Button>
           </Form>
         </Col>

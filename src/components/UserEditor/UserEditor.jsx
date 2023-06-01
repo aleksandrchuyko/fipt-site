@@ -8,6 +8,7 @@ export const UserEditor = ({ users, user, onSubmit, close }) => {
   const [name, setName] = useState(user.name);
   const [email, setEmail] = useState(user.email);
   const [password, setPassword] = useState(user.password);
+  const [cardID, setCardID] = useState(user._id);
 
   const handleChange = e => {
     const currentInputName = e.currentTarget.name;
@@ -41,6 +42,7 @@ export const UserEditor = ({ users, user, onSubmit, close }) => {
     setName('');
     setEmail('');
     setPassword('');
+    setCardID('');
     close();
   };
   return (
@@ -56,20 +58,20 @@ export const UserEditor = ({ users, user, onSubmit, close }) => {
       <Card style={{ padding: '20px' }}>
         <Form onSubmit={handleSubmit}>
           <Form.Group className="mb-2" controlId="formBasicName">
-            <Form.Label>User name</Form.Label>
+            <Form.Label>ПІБ студента</Form.Label>
 
             <Form.Control
               type="text"
               name="name"
               value={name}
               onChange={handleChange}
-              pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
+              pattern="^[a-zA-Zа-яА-Яа-їґЄ-ЯҐ]+(([' -][a-zA-Zа-яА-Яа-їґЄ-ЯҐ ])?[a-zA-Zа-яА-Яа-їґЄ-ЯҐ]*)*$"
               title="Name may contain only letters, apostrophe, dash and spaces."
               required
             />
           </Form.Group>
           <Form.Group className="mb-2" controlId="formBasicEmail">
-            <Form.Label>User email</Form.Label>
+            <Form.Label>Email студента</Form.Label>
             <Form.Control
               type="mail"
               name="email"
@@ -80,7 +82,7 @@ export const UserEditor = ({ users, user, onSubmit, close }) => {
             />
           </Form.Group>
           <Form.Group className="mb-2" controlId="formBasicPassword">
-            <Form.Label>User password</Form.Label>
+            <Form.Label>Паспорт студента</Form.Label>
             <Form.Control
               type="text"
               name="password"
@@ -90,8 +92,18 @@ export const UserEditor = ({ users, user, onSubmit, close }) => {
               required
             />
           </Form.Group>
+          <Form.Group className="mb-2" controlId="formBasicPassword">
+            <Form.Label>Персональний ID</Form.Label>
+            <Form.Control
+              type="text"
+              name="cardid"
+              minLength="6"
+              value={cardID}
+              disabled
+            />
+          </Form.Group>
           <Button variant="primary" type="submit">
-            Apply
+            Зберегти зміни
           </Button>
           <Button
             variant="primary"
@@ -101,7 +113,7 @@ export const UserEditor = ({ users, user, onSubmit, close }) => {
               close();
             }}
           >
-            Cancel
+            Повернутись
           </Button>
         </Form>
       </Card>

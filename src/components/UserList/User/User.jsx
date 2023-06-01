@@ -9,9 +9,6 @@ export const User = ({ id, name, email, password, open, getUserById }) => {
       <p className="mb-2">
         <b>Name:</b> {name}
         <br />
-        <b>Email:</b> {email}
-        <br />
-        <b>Password:</b> {password}
       </p>
       <Button
         variant="outline-secondary"
@@ -22,7 +19,7 @@ export const User = ({ id, name, email, password, open, getUserById }) => {
           open();
         }}
       >
-        Edit
+        Докладно
       </Button>
       <Button
         variant="outline-secondary"
@@ -33,7 +30,7 @@ export const User = ({ id, name, email, password, open, getUserById }) => {
           removeUser(id);
         }}
       >
-        Delete
+        Видалити
       </Button>
     </div>
   );

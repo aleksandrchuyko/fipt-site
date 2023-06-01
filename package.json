@@ -1,8 +1,8 @@
 {
-  "name": "btc-test-frontend",
+  "name": "fipt-site",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://aleksandrchuyko.github.io/btc-test-frontend/",
+  "homepage": "https://aleksandrchuyko.github.io/fipt-site/",
   "dependencies": {
     "@mui/material": "^5.10.4",
     "@mui/styled-engine-sc": "^5.10.3",

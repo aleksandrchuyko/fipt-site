@@ -10,16 +10,16 @@ const SiteHeader = () => {
     <Navbar bg="dark" expand="lg" variant="dark">
       <Container>
         <Navbar.Brand className="text-primary" as={Link} to="register">
-          Userlist
+          Сервіси деканату ФІПТ
         </Navbar.Brand>
         <Nav>
           {!isLoggedIn && (
             <>
               <Nav.Link as={NavLink} to="register" key="register">
-                Registration
+                Реєстрація
               </Nav.Link>
               <Nav.Link as={NavLink} to="login" key="login">
-                Login
+                Вхід
               </Nav.Link>
             </>
           )}

@@ -59,7 +59,7 @@ export const RegisterForm = ({ users, onSubmit }) => {
               />
             </Form.Group>
             <Button variant="primary" type="submit">
-              Register
+              Реєстрація
             </Button>
           </Form>
         </Col>
