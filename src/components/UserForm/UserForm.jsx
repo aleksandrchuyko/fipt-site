@@ -48,7 +48,6 @@ export const UserForm = ({ users, onSubmit }) => {
       <Form onSubmit={handleSubmit}>
         <Form.Group className="mb-2" controlId="formBasicName">
           <Form.Label>ПІБ студента</Form.Label>
-
           <Form.Control
             type="text"
             name="name"
