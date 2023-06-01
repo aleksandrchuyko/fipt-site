@@ -7,7 +7,7 @@ export const Filter = ({ name, onChange }) => {
     <Box>
       <Form>
         <Form.Group className="mb-2" controlId="formBasicName">
-          <Form.Label>Search</Form.Label>
+          <Form.Label>Фільтр</Form.Label>
 
           <Form.Control
             type="text"

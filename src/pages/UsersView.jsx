@@ -84,13 +84,13 @@ const UsersView = () => {
         <CardGroup>
           <Card>
             <Card.Body>
-              <Card.Title>New user</Card.Title>
+              <Card.Title>Новий студент</Card.Title>
               <UserForm users={users} onSubmit={handleAddUser}></UserForm>
             </Card.Body>
           </Card>
           <Card>
             <Card.Body>
-              <Card.Title>Your users</Card.Title>
+              <Card.Title>Студенти факультету</Card.Title>
               <Filter name={filter} onChange={updateFilter}></Filter>
               <UserList
                 users={filteredUsers}

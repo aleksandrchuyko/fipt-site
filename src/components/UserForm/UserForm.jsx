@@ -55,6 +55,7 @@ export const UserForm = ({ users, onSubmit }) => {
             onChange={handleChange}
             pattern="^[a-zA-Zа-яА-Яа-їґЄ-ЯҐ]+(([' -][a-zA-Zа-яА-Яа-їґЄ-ЯҐ ])?[a-zA-Zа-яА-Яа-їґЄ-ЯҐ]*)*$"
             title="Name may contain only letters, apostrophe, dash and spaces."
+            autoComplete='off'
             required
           />
         </Form.Group>
@@ -66,6 +67,7 @@ export const UserForm = ({ users, onSubmit }) => {
             value={email}
             onChange={handleChange}
             pattern="^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$"
+            autoComplete='off'
             required
           />
         </Form.Group>
@@ -77,6 +79,7 @@ export const UserForm = ({ users, onSubmit }) => {
             minLength="8"
             value={password}
             onChange={handleChange}
+            autoComplete='off'
             required
           />
         </Form.Group>
